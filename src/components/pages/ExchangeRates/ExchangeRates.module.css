@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.CurrencyExchangeContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Header {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.InputsContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.InputContainer {
+  margin: 0 3rem 0 0;
+  display: flex;
+  align-items: center;
+  height: 2.5rem;
+}
+
+.Input {
+  border: none;
+  width: 10rem;
+  height: 2.5rem;
+  background-color: rgba(36, 36, 36, 0.562);
+  color: white;
+  font-size: 1.1rem;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.Input:focus {
+  outline: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.IconContainer {
+  height: 2.5rem;
+  font-size: 2.5rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Currencies {
+  display: flex;
+  flex-direction: column;
+  margin: 0 3rem;
+}
+
+.Currency {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.FlagContainer {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.CurrName {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  margin-right: 1rem;
+}
+
+.CurrAmount {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  .InputsContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .InputContainer {
+    margin-bottom: 1rem;
+  }
+
+  .IconContainer {
+    margin-bottom: 1rem;
+  }
+
+  .Header {
+    font-size: 1.7rem;
+  }
+}

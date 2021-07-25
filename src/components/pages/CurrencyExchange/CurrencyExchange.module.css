@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.CurrencyExchangeContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Header {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.InputsContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.InputContainer {
+  margin: 0 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.Input {
+  border: none;
+  width: 13rem;
+  height: 2.5rem;
+  background-color: rgba(36, 36, 36, 0.562);
+  color: white;
+  font-size: 1.1rem;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.Input:focus {
+  outline: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.IconContainer {
+  margin-top: 5px;
+  font-size: 3rem;
+  color: white;
+}
+
+@media (max-width: 700px) {
+  .InputsContainer {
+    flex-direction: column;
+  }
+
+  .Header {
+    font-size: 1.5rem;
+  }
+}
